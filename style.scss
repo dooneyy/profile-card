@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+//Colors
+
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-blue: hsl(229, 23%, 23%);
+$dark-gray-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+//font
+$family: Kumbh Sans;
+$font-weight-light: 400;
+$font-weight-dark: 700;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $family;
+    height: 100vh;
+    background-color: $dark-cyan;
+    overflow: hidden;
+    // background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-top.svg);
+    // background-repeat: no-repeat;
+    // background-position: top -70vh left -30vw, bottom -80vh right -30vw ;
+
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: right 45vw bottom 50vh, left 50vw top 50vh;
+
+.container{
+    display: flex;
+    justify-content: center;
+
+
+    .card{
+       display: flex;
+       flex-direction: column;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 2px 2px 20px $dark-gray;
+        margin:90px 0;
+
+        font-family: $family;
+
+        &__head img{
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        &__img{
+           align-self: center;
+           transform: translateY(-50px);
+           
+           img{
+            border-radius: 50%;
+            border: 5px solid #fff;
+           }
+
+        }
+
+            h3{
+                color: $very-dark-blue;
+                font-weight: $font-weight-dark;
+                align-self: center; 
+                margin: -27px 0 0 0;
+    
+                span{
+                    color: $dark-gray-blue;
+                    font-weight: $font-weight-light;
+                }
+            }
+
+            p{
+                align-self: center; 
+                color: $dark-gray-blue;
+                font-weight: $font-weight-light;
+                font-size: 18px;
+                margin: 12px 0;
+            }
+
+            &__body{
+                border-top: 1px solid $dark-gray;
+                margin-top: 18px;
+                display: flex;
+                justify-content: space-around;
+
+
+               &-1,
+               &-2,
+               &-3{
+                  padding: 19px;
+                h2{
+                    color: $very-dark-blue;
+                    font-weight: $font-weight-dark;
+                    align-self: center;
+                }
+
+                .des{
+                   align-items: center;
+                    color: $dark-gray-blue;
+                    font-weight: $font-weight-light;
+                    font-size: 10px;
+                }
+               }
+            }
+    
+
+    }
+   
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    & a{
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+}
